@@ -33,4 +33,5 @@
   * [Security Features](technical/technical-docs/security-features/README.md)
     * [Liquidation Mechanics](technical/technical-docs/security-features/liquidation-mechanics.md)
     * [Oracle Pricing](technical/technical-docs/security-features/oracle-pricing.md)
+    * [Single-Source Price Feeds](technical/technical-docs/security-features/single-source-price-feeds.md)
     * [Granular Asset Risk Management](technical/technical-docs/security-features/granular-asset-risk-management.md)
