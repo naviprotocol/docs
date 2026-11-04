@@ -4,7 +4,7 @@ Here we'll take a look at a core piece of infrastructure of the protocol, the Or
 
 Package Name: `oracle`&#x20;
 
-Source Code: [oracle on GitHub](https://github.com/naviprotocol/protocol-core/tree/mainnet/oracle)
+Source Code: [oracle on GitHub](https://github.com/naviprotocol/navi-smart-contracts/tree/main/oracle)
 
 * [`oracle.move`](broken-reference)
 

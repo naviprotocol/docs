@@ -2,12 +2,12 @@
 
 ## Introduction
 
-A liquidation is a process that occurs when a borrower's health factor goes below 1 due to their collateral value not properly covering their loan/debt value. This might happen when the collateral decreases in value or the borrowed debt increases in value against each other. This collateral vs loan value ratio is shown in the [health factor](https://docs.aave.com/risk/asset-risk/risk-parameters#health-factor).\
+A liquidation is a process that occurs when a borrower's health factor goes below 1 due to their collateral value not properly covering their loan/debt value. This might happen when the collateral decreases in value or the borrowed debt increases in value against each other. This collateral vs loan value ratio is shown in the [health factor](https://naviprotocol.gitbook.io/navi-protocol-docs/protocol-mechanics/liquidations).\
 In a liquidation, up to 50% of a borrower's debt is repaid and that value + liquidation fee is taken from the collateral available, so after a liquidation that amount liquidated from your debt is repaid.
 
 ## How much is the liquidation penalty?
 
-The liquidation penalty (or bonus for liquidators) depends on the asset used as collateral. You can find every assets' liquidation fee in the [risk parameters section](https://docs.aave.com/risk/asset-risk/risk-parameters).
+The liquidation penalty (or bonus for liquidators) depends on the asset used as collateral. You can find every assets' liquidation fee in the [risk parameters section](https://naviprotocol.gitbook.io/navi-protocol-docs/parameters/lending-and-borrowing).
 
 ## Can you give me an example?
 

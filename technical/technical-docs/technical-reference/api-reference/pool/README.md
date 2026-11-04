@@ -4,7 +4,7 @@ The `pool` is the core contract through which users will interact with the proto
 
 Package Name: `pool`
 
-Source Code: [pool on GitHub](https://github.com/naviprotocol/protocol-core/tree/mainnet/pool)
+Source Code: [pool on GitHub](https://github.com/naviprotocol/navi-smart-contracts/blob/main/lending_core/sources/pool.move)
 
 * [`pool.move`](broken-reference)
 
@@ -74,7 +74,7 @@ To check a user's health factor, use [`get_user_account_data`](./#function-get\_
 
 #### **`function flash_loan`**
 
-See Sui Example flash loan [here](https://github.com/MystenLabs/sui/blob/main/sui\_programmability/examples/defi/sources/flash\_lender.move).
+See the NAVI flash loan implementation [here](https://github.com/naviprotocol/navi-smart-contracts/blob/main/lending\_core/sources/flash\_loan.move).
 
 ### View Methods
 

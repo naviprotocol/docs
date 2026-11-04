@@ -38,6 +38,6 @@ Follow us on our socials and subscribe to Discord notifications!
 
 * [Twitter](https://twitter.com/navi\_protocol)
 * [Telegram](https://t.me/navi\_protocol)
-* [Discord](https://discord.gg/navi\_protocol)
+* [Discord](https://discord.gg/R6Xkbee8Xq)
 * [GitHub](https://github.com/naviprotocol)
 

@@ -46,7 +46,7 @@ Once you have the account(s) to liquidate, you will need to calculate the amount
     $$debtToCover = (userStableDebt + userVariableDebt) * LiquidationCloseFactorPercent$$
 
 
-3. For reserves that have `usage_as_collateral_enabled` as `true`, the `current_atoken_balance` and the current [liquidation bonus](https://docs.aave.com/risk/asset-risk/risk-parameters) gives the max amount of collateral that can be liquidated \
+3. For reserves that have `usage_as_collateral_enabled` as `true`, the `current_atoken_balance` and the current [liquidation bonus](https://naviprotocol.gitbook.io/navi-protocol-docs/parameters/lending-and-borrowing) gives the max amount of collateral that can be liquidated \
    \
    $$maxAmountOfCollateralToLiquidate = (debtAssetPrice * currentATokenBalance * liquidationBonus)/ collateralPrice$$
 
@@ -67,7 +67,7 @@ Depending on your environment, preferred programming tools and languages, your b
 
 One way to calculate the profitability is the following:
 
-1. Store and retrieve each collateral's relevant details such as address, decimals used, and [liquidation bonus as listed here](https://docs.aave.com/risk/asset-risk/risk-parameters).
+1. Store and retrieve each collateral's relevant details such as address, decimals used, and [liquidation bonus as listed here](https://naviprotocol.gitbook.io/navi-protocol-docs/parameters/lending-and-borrowing).
 2. Get the user's collateral balance (n`TokenBalance`).
 3. Get the asset's price according to the [Aave's oracle contract](notion://www.notion.so/developers/the-core-protocol/price-oracle) (`getAssetPrice()`).
 4. The maximum collateral bonus you can receive will be the collateral balance (2) multiplied by the liquidation bonus (1) multiplied by the collateral asset's price in ETH (3). Note that for assets such as USDC, the number of decimals are different from other assets.
