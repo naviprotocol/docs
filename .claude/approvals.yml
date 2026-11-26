@@ -1,0 +1,13 @@
+version: 1
+rules:
+  - purpose: "A change merges on Claude's approval alone once its review passes. If it fails or has no result, one person other than the author instead."
+    paths: ["**"]
+    verdict: { claude: blocks }  # holds while the review runs, and when its answer was dropped
+    override:
+      - { if: "claude/code_review = error OR claude/code_review = incomplete", verdict: { claude: comments, seats: [{ count: 1, from: [humans, "!pr/authors"] }] } }
+      - { if: "claude/code_review = pass", verdict: { claude: approves, seats: 0 } }
+      - { if: "claude/code_review = fail", verdict: { claude: comments, seats: [{ count: 1, from: [humans, "!pr/authors"] }] } }
+  - purpose: "Sensitive config (Claude rules, REVIEW.md, CODEOWNERS, GitHub settings, Git attributes) always takes one person other than the author, and Claude does not approve it."
+    paths: ["**/.claude/**", "**/CLAUDE.md", "**/AGENTS.md", "**/REVIEW.md", "**/.mcp.json", "**/.claude-plugin/**", "**/CODEOWNERS", "**/.github/**", "**/.gitattributes", "**/.gitmodules", "**/.gitbook.yaml"]
+    nested: inherit  # once enforced, also holds under a directory's policy file
+    verdict: { claude: comments, seats: [{ count: 1, from: [humans, "!pr/authors"] }] }
